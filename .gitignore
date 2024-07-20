@@ -1,3 +1,7 @@
 /node_modules
 /.pnp
 .pnp.js
+
+// testing sql statements
+db.sql
+.env
