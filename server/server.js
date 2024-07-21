@@ -22,6 +22,7 @@ app.get('/api/v1/stores', async (req, res) => {
     const result = await db.query('SELECT * FROM stores');
     res.json({
       status: "success",
+      results: result.rows.length,
       data: {
         store: result.rows
       }
@@ -36,8 +37,7 @@ app.get('/api/v1/stores', async (req, res) => {
 // Get individual store
 app.get('/api/v1/stores/:id', async (req, res) => {
   try {
-    const { id } = req.params;
-    const result = await db.query('SELECT * FROM stores WHERE id = $1', [id]);
+    const result = await db.query('SELECT * FROM stores WHERE id = $1', [req.params.id]);
 
     if (result.rows.length === 0) {
       return res.status(404).json({
@@ -60,20 +60,38 @@ app.get('/api/v1/stores/:id', async (req, res) => {
 
 // Create a store
 app.post('/api/v1/stores', async (req, res) => {
-  console.log(req.body);
-  res.status(200).json({ status: "success", data: req.body }); 
+  try {
+    const result = await db.query("INSERT INTO stores (name, location) values ($1, $2) RETURNING *", [req.body.name, req.body.location]);
+    res.json({
+      status: "success",
+      data: {
+        result: result.rows[0]
+      }
+    })
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
 });
 
 // Update stores
 app.put("/api/v1/stores/:id", async (req, res) => {
-  console.log(req.params.id);
-  console.log(req.body);
-  res.status(200).json({ status: "success", data: req.body }); 
+  try {
+    const result = await db.query("UPDATE stores SET NAME= $1, LOCATION = $2 WHERE ID = $3 RETURNING *", [req.body.name, req.body.location, req.params.id]);
+    res.status(200).json({ status: "success", data: result.rows[0] }); 
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
 });
 
 // Delete stores
 app.delete("/api/v1/stores/:id", async (req, res) => {
-  console.log(req.params.id);
-  console.log(req.body);
-  res.status(204).json({ status: "success"}); 
+  try {
+    const result = await db.query("DELETE FROM stores WHERE ID = $1 RETURNING *", [req.params.id]);
+    res.status(204).json({ status: "success", data: result.rows[0] }); 
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
 });
