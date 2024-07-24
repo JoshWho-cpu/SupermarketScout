@@ -1,0 +1,17 @@
+# Ensure that text files use LF line endings in the repository
+* text=auto
+
+# Normalize all text files to LF in the repository
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+*.html text
+*.css text
+*.md text
+
+# Binary files should not be modified
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary

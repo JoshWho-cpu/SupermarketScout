@@ -24,7 +24,7 @@ app.get('/api/v1/stores', async (req, res) => {
       status: "success",
       results: result.rows.length,
       data: {
-        store: result.rows
+        stores: result.rows
       }
     });
   } catch (err) {
@@ -65,7 +65,7 @@ app.post('/api/v1/stores', async (req, res) => {
     res.json({
       status: "success",
       data: {
-        result: result.rows[0]
+        store: result.rows[0]
       }
     })
   } catch (err) {

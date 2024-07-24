@@ -1,0 +1,320 @@
+
+{
+  categories: [
+    {
+      id: '1229749',
+      name: 'Office Supplies',
+      path: 'Office Supplies',
+      children: [Array]
+    },
+    {
+      id: '5428',
+      name: 'Patio & Garden',
+      path: 'Patio & Garden',
+      children: [Array]
+    },
+    {
+      id: '1072864',
+      name: 'Home Improvement',
+      path: 'Home Improvement',
+      children: [Array]
+    },
+    { id: '5440', name: 'Pets', path: 'Pets', children: [Array] },
+    {
+      id: '7796869',
+      name: 'Musical Instruments',
+      path: 'Musical Instruments',
+      children: [Array]
+    },
+    {
+      id: '5433',
+      name: 'Walmart MoneyCenter',
+      path: 'Walmart MoneyCenter',
+      children: [Array]
+    },
+    { 
+      id: '5436', 
+      name: 'Help', 
+      path: 'Help', 
+      children: [Array] 
+    },
+    { 
+      id: '976759', 
+      name: 'Food', 
+      path: 'Food', 
+      children: [Array] 
+    },
+    {
+      id: '5984018',
+      name: 'Shop by TV Show',
+      path: 'Shop by TV Show',
+      children: [Array]
+    },
+    {
+      id: '7924299',
+      name: 'Premium Beauty',
+      path: 'Premium Beauty',
+      children: [Array]
+    },
+    {
+      id: '3734780',
+      name: 'Shop by Brand',
+      path: 'Shop by Brand',
+      children: [Array]
+    },
+    {
+      id: '5324366',
+      name: 'Shop by Video Game',
+      path: 'Shop by Video Game',
+      children: [Array]
+    },
+    {
+      id: '6914230',
+      name: 'Miscellaneous',
+      path: 'Miscellaneous',
+      children: [Array]
+    },
+    {
+      id: '3625709',
+      name: 'Shop by Seller',
+      path: 'Shop by Seller',
+      children: [Array]
+    },
+    {
+      id: '9804697',
+      name: 'View In Your Home',
+      path: 'View In Your Home',
+      children: [Array]
+    },
+    { id: '6957270', name: 'Kids', path: 'Kids', children: [] },
+    {
+      id: '2636',
+      name: 'Video Games',
+      path: 'Video Games',
+      children: [Array]
+    },
+    { id: '3891', name: 'Jewelry', path: 'Jewelry', children: [Array] },
+    { id: '4104', name: 'Music', path: 'Music', children: [Array] },
+    {
+      id: '3944',
+      name: 'Electronics',
+      path: 'Electronics',
+      children: [Array]
+    },
+    {
+      id: '4125',
+      name: 'Sports & Outdoors',
+      path: 'Sports & Outdoors',
+      children: [Array]
+    },
+    { id: '3920', name: 'Books', path: 'Books', children: [Array] },
+    {
+      id: '1334134',
+      name: 'Arts Crafts & Sewing',
+      path: 'Arts Crafts & Sewing',
+      children: [Array]
+    },
+    { id: '5427', name: 'Baby', path: 'Baby', children: [Array] },
+    {
+      id: '976760',
+      name: 'Health and Medicine',
+      path: 'Health and Medicine',
+      children: [Array]
+    },
+    {
+      id: '14503',
+      name: 'Feature',
+      path: 'Feature',
+      children: [Array]
+    },
+    {
+      id: '5426',
+      name: 'Photo Center',
+      path: 'Photo Center',
+      children: [Array]
+    },
+    {
+      id: '5438',
+      name: 'Clothing',
+      path: 'Clothing',
+      children: [Array]
+    },
+    {
+      id: '5431',
+      name: 'Pharmacy',
+      path: 'Pharmacy',
+      children: [Array]
+    },
+    {
+      id: '1085666',
+      name: 'Beauty',
+      path: 'Beauty',
+      children: [Array]
+    },
+    {
+      id: '1105910',
+      name: 'Cell Phones',
+      path: 'Cell Phones',
+      children: [Array]
+    },
+    {
+      id: '1115193',
+      name: 'Household Essentials',
+      path: 'Household Essentials',
+      children: [Array]
+    },
+    {
+      id: '5920738',
+      name: 'Shop by Movie',
+      path: 'Shop by Movie',
+      children: [Array]
+    },
+    { id: '8932632', name: 'Ideas', path: 'Ideas', children: [Array] },
+    {
+      id: '6735581',
+      name: 'Walmart for Business',
+      path: 'Walmart for Business',
+      children: [Array]
+    },
+    {
+      id: '5967908',
+      name: 'Collectibles',
+      path: 'Collectibles',
+      children: [Array]
+    },
+    {
+      id: '6048744',
+      name: 'Shop with Purpose',
+      path: 'Shop with Purpose',
+      children: [Array]
+    },
+    {
+      id: '4191733',
+      name: 'Subscriptions',
+      path: 'Subscriptions',
+      children: [Array]
+    },
+    { id: '0', name: 'Home Page', path: 'Home Page', children: [] },
+    {
+      id: '91083',
+      name: 'Auto & Tires',
+      path: 'Auto & Tires',
+      children: [Array]
+    },
+    {
+      id: '4096',
+      name: 'Movies & TV Shows',
+      path: 'Movies & TV Shows',
+      children: [Array]
+    },
+    { id: '4044', name: 'Home', path: 'Home', children: [Array] },
+    {
+      id: '2637',
+      name: 'Party & Occasions',
+      path: 'Party & Occasions',
+      children: [Array]
+    },
+    { id: '4171', name: 'Toys', path: 'Toys', children: [Array] },
+    {
+      id: '5434',
+      name: 'Gift Registry',
+      path: 'Gift Registry',
+      children: [Array]
+    },
+    {
+      id: '1094765',
+      name: 'Gifts & Registry',
+      path: 'Gifts & Registry',
+      children: [Array]
+    },
+    {
+      id: '1005862',
+      name: 'Personal Care',
+      path: 'Personal Care',
+      children: [Array]
+    },
+    {
+      id: '1085632',
+      name: 'Seasonal',
+      path: 'Seasonal',
+      children: [Array]
+    },
+    {
+      id: '6163033',
+      name: 'Services',
+      path: 'Services',
+      children: [Array]
+    },
+    {
+      id: '5939293',
+      name: 'Character Shop',
+      path: 'Character Shop',
+      children: [Array]
+    },
+    {
+      id: '6197502',
+      name: 'Industrial & Scientific',
+      path: 'Industrial & Scientific',
+      children: [Array]
+    },
+    {
+      id: '9748312',
+      path: 'Character Shop',
+      children: [Array]
+    },
+    {
+      id: '6197502',
+      name: 'Industrial & Scientific',
+      path: 'Industrial & Scientific',
+      children: [Array]
+    },
+    {
+      id: '9748312',
+    },
+    {
+      id: '6197502',
+      name: 'Industrial & Scientific',
+      path: 'Industrial & Scientific',
+      children: [Array]
+    },
+    {
+      id: '9748312',
+      path: 'Industrial & Scientific',
+      children: [Array]
+    },
+    {
+      id: '9748312',
+      children: [Array]
+    },
+    {
+      id: '9748312',
+    },
+    {
+      id: '9748312',
+      name: 'Personalized Gifts',
+      id: '9748312',
+      name: 'Personalized Gifts',
+      path: 'Personalized Gifts',
+      name: 'Personalized Gifts',
+      path: 'Personalized Gifts',
+      children: [Array]
+      path: 'Personalized Gifts',
+      children: [Array]
+    },
+      children: [Array]
+    },
+    },
+    {
+      id: '2593086',
+      name: 'New Arrivals',
+      path: 'New Arrivals',
+      children: [Array]
+    },
+    {
+      id: '8834205',
+      name: 'B2B Walmart',
+      path: 'B2B Walmart',
+      children: [Array]
+    }
+  ]
+}
