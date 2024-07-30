@@ -20,7 +20,7 @@ const UpdateStore = (props) => {
       fetchData();
     }, []);
   return (
-    <div>Updaterestaurant</div>
+    <div>Updatestore</div>
   );
 };
 

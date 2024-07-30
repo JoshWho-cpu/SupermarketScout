@@ -5,3 +5,4 @@
 // testing sql statements
 db.sql
 .env
+server/apis/example calls/categories_output.json

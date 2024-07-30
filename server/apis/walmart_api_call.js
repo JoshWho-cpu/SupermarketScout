@@ -61,7 +61,7 @@ await axios.get(url, {
 
     writeFileSync('./apis/example calls/categories_output.json', output);
     console.log('Output written to categories_output.json');
-//   console.log(response.data);
+    console.log(response.data);
 //   console.log(response.data.nextPage);
 //   url = `${baseUrl}${response.data.nextPage}`;
 })
