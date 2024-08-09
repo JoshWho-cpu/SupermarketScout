@@ -70,6 +70,39 @@ app.get('/api/v1/stores/findstore/:latitude/:longitude', async (req, res) => {
   }
 });
 
+app.get('/api/v1/items/search', async (req, res) => {
+  try {
+    const searchQuery = req.query.query;
+
+    const timestamp = Date.now().toString();
+    const signatureString = ''+consumerId+'\n'+timestamp+'\n'+keyVersion+'\n';
+    const signature = generateSignature(signatureString, privateKey);
+    const walmartApiUrl = `https://developer.api.walmart.com/api-proxy/service/affil/product/v2/search?query=${searchQuery}`;
+    await axios.get(walmartApiUrl, {
+      headers: {
+        'WM_CONSUMER.ID': consumerId,
+        'WM_SEC.KEY_VERSION': keyVersion,
+        'WM_CONSUMER.INTIMESTAMP': timestamp,
+        'WM_SEC.AUTH_SIGNATURE': signature
+      }
+    })
+    .then(response => {
+        // console.log(response.data);
+      res.json({
+        status: "success",
+        data: {
+          stores: response.data
+        }
+      })
+    })
+    .catch(error => {
+      console.error('Error making API request to zipcode:', error);
+    });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+})
 
 
 const db = require('./db/db');
